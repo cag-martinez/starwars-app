@@ -43,7 +43,7 @@ var characters = [
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-  res.jsonFile(path.join(__dirname, "public/view.html"));
+  res.json(path.join(__dirname, "view.html"));
 });
 
 app.get("/add", function(req, res) {
